@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./saas/main.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <script type="module" src="./js/controller.js"></script>
+    <title>EventsNow</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="/">
+          <img src="img\llogo.png" alt="Logo" class="header__logo" />
+        </a>
+        <form class="search">
+          <input
+            type="text"
+            class="search__field"
+            placeholder="Find your next big nighout !"
+          />
+          <button class="btn search__btn">
+            <svg class="search__icon">
+              <use href="img\icons.svg#icon-search"></use>
+            </svg>
+            <span>Search</span>
+          </button>
+        </form>
+      </header>
+      <div class="search-results">
+        <ul class="results">
+          <!--
+            <li class="preview">
+              <a class="preview__link preview__link--active" href="#1234">
+                <figure class="preview__fig">
+                  <img src="src/img/test-1.jpg" alt="Test" />
+                </figure>
+                <div class="preview__data">
+                  <h1 class="preview__name">Kylie Minogue...</h4>
+                  <p class="preview__location">North America</p>
+                </div>
+              </a>
+            </li>
+          -->
+        </ul>
+
+        <div class="pagination">
+          <!-- <button class="btn--inline pagination__btn--prev">
+            <svg class="search__icon">
+              <use href="src/img/icons.svg#icon-arrow-left"></use>
+            </svg>
+            <span>Page 1</span>
+          </button>
+          <button class="btn--inline pagination__btn--next">
+            <span>Page 3</span>
+            <svg class="search__icon">
+              <use href="src/img/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </button> -->
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="message">
+          <div>
+            <svg>
+              <use href="img/icons.svg#icon-smile"></use>
+            </svg>
+          </div>
+          <p>
+            You can start your search with artist name, city, country, venue...
+            Share it with your friends. Have fun!
+          </p>
+        </div>
+        <!-- <div class="spinner">
+          <svg>
+            <use href="src/img/loading.svg"></use>
+          </svg>
+        </div> -->
+
+        <!-- <div class="error">
+          <svg>
+            <use href="src/img/icons.svg#icon-error"></use>
+          </svg>
+          <p> Couldn't find any events, check your spelling and try again :P !</p>
+        </div> -->
+
+        <!-- <div class="message">
+          <svg>
+          <use href="src\img\icons.svg#icon-arena"><use>
+          <p>Start searching...</p>
+          </svg>
+        </div> -->
+
+        <!-- <figure class="event__fig">
+          <img src="src/img/test-1.jpg" alt="Test2" />
+          <h1 class="event__title"></h1>
+        </figure>
+        <div class="event__details">
+          <h2 class="heading--2">Event details</h2>
+          <ul class="event__details-list">
+            <li class="event__detail"></li>
+          </ul>
+        </div>
+
+        <button class="btn--star">
+          <svg class="">
+           <use href="src/img/icons.svg#icon-bookmark"></use>
+          </svg>
+        </button>
+       -->
+      </div>
+
+      <nav class="share-btn-container">
+        <a href="#" class="facebook-btn">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" class="twitter-btn">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="whatsapp-btn">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#" class="pinterest-btn">
+          <i class="fab fa-pinterest"></i>
+        </a>
+        <p>
+          <button class="worldshare">
+            <svg>
+              <use href="img/icons.svg#world-share"></use>
+            </svg>
+          </button>
+        </p>
+
+        <div class="share-btn-container__book">
+          <button class="book__btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 30 20"
+              fill="none"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M12 2 L14.63 8.55 L22 9.27 L17 14.62 L18.82 22 L12 18.77 L5.18 22 L7 14.62 L2 9.27 L9.37 8.55 L12 2z"
+              />
+            </svg>
+            <span>Starred</span>
+          </button>
+
+          <div class="bookmarks">
+            <ul class="bookmarks__list">
+              <div class="error">
+                <p>No bookmarks yet. Browse for events and bookmark it.</p>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="tabs">
+        <div class="tabs__event-container">
+          <button
+            class="btn events__tab events__tab--1 events__tab--active"
+            data-tab="1"
+          >
+            <span></span>UKs Hottest events
+          </button>
+          <!-- <button class="btn events__tab events__tab--2" data-tab="2">
+            <span>02</span> Worlds top events
+          </button> -->
+          <button
+            id="find-me"
+            class="btn events__tab events__tab--3"
+            data-tab="3"
+          >
+            <span></span>Hottest near me
+          </button>
+        </div>
+
+        <div class="tabs__content tab__content--1 tab__content--active">
+          <div class="slider--1">
+            <div class="slide">
+              <!-- <figure class="slide__fig">
+                <img src="img.img" alt="icon-type" class="slider__img" />
+               </figure>
+               <a class="slide__link slide__link--active" href="1234">
+               <div class="slide__data">
+                <h1 class="heading--3">Name</h1>
+                <ul class="slide__details-list">
+                   <li class="slide__type">type</li>
+                    <li class="slide__location">loc</li>
+                    <li class="slide__city">city</li>
+                    <li class="slide__date">date</li>
+                  </ul>
+                 </a>  
+               </div>-->
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="tabs__content tab__content--2">
+          <div class="slider--2">
+            <div class="slide"> -->
+        <!-- <figure class="slide__fig">
+                <img src="img.img" alt="icon-type" class="slider__img" />
+              </figure>
+              <a class="slide__link slide__link--active" href="1234">
+                <div class="slide__data">
+                  <h1 class="heading--3">Name</h1>
+                  <ul class="slide__details-list">
+                     <li class="slide__type">type</li>
+                      <li class="slide__location">loc</li>
+                      <li class="slide__city">city</li>
+                      <li class="slide__date">date</li>
+                    </ul>
+                   </a>  
+                 </div>-->
+        <!-- </div>
+          </div>
+        </div> -->
+
+        <div id="hot" class="tabs__content tab__content--3">
+          <div class="slider--3">
+            <div class="slide__3">
+              <!-- <figure class="slide__fig">
+                <img src="img.img" alt="icon-type" class="slider__img" />
+              </figure>
+              <a class="slide__link slide__link--active" href="1234">
+                <div class="slide__data">
+                  <h1 class="heading--3">Name</h1>
+                  <ul class="slide__details-list">
+                     <li class="slide__type">type</li>
+                      <li class="slide__location">loc</li>
+                      <li class="slide__city">city</li>
+                      <li class="slide__date">date</li>
+                    </ul>
+                   </a>  
+                 </div>-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="slider__btn slider__btn--left">&larr;</button>
+      <button class="slider__btn slider__btn--right">&rarr;</button>
+    </div>
+  </body>
+</html>

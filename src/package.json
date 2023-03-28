@@ -1,0 +1,24 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "Eventsapp",
+  "main": "parcel npx index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel npx index.html"
+  },
+  "author": "Robert",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.58.3"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.1.15",
+    "firebase": "^9.17.1",
+    "img": "^3.0.3",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "postcss-preset-env": "^6.7.0"
+  }
+}

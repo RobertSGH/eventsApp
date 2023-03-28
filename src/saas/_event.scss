@@ -1,0 +1,112 @@
+.event {
+  padding-top: 5rem;
+
+  &__fig {
+    height: 10rem;
+    position: relative;
+    transform-origin: top;
+  }
+
+  &__img {
+    width: 100%;
+    height: 250%;
+    display: block;
+    object-fit: contain;
+  }
+
+  &__details {
+    padding: 15rem 7rem 5rem;
+    font-size: 1.7rem;
+    line-height: 2;
+    display: grid;
+    align-items: center;
+  }
+
+  &__details-list {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2.5rem 3rem;
+    list-style: none;
+    font-size: 2.5rem;
+    font-weight: 450;
+  }
+
+  &__venue {
+    display: flex;
+    align-items: center;
+
+    svg {
+      height: 5rem;
+      width: 5rem;
+      margin-right: 1.1rem;
+      flex: 0 0 auto;
+      margin-top: 0.1rem;
+    }
+  }
+
+  &__timezone {
+    display: flex;
+    align-items: center;
+
+    svg {
+      height: 5rem;
+      width: 5rem;
+      margin-right: 1.1rem;
+      flex: 0 0 auto;
+      margin-top: 0.1rem;
+    }
+  }
+
+  &__priceRange {
+    display: flex;
+    align-items: center;
+
+    svg {
+      height: 5rem;
+      width: 5rem;
+      margin-right: 1.1rem;
+      flex: 0 0 auto;
+      margin-top: 0.1rem;
+    }
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+
+    svg {
+      height: 5rem;
+      width: 5rem;
+      margin-right: 1.1rem;
+      flex: 0 0 auto;
+      margin-top: 0.1rem;
+    }
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+
+    svg {
+      height: 5rem;
+      width: 5rem;
+      margin-right: 1.1rem;
+      flex: 0 0 auto;
+      margin-top: 0.1rem;
+    }
+  }
+
+  &__type {
+    display: flex;
+    align-items: center;
+
+    svg {
+      height: 5rem;
+      width: 5rem;
+      margin-right: 1.1rem;
+      flex: 0 0 auto;
+      margin-top: 0.1rem;
+    }
+  }
+}
