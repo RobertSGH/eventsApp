@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js":[function(require,module,exports) {
+})({"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -2403,7 +2403,7 @@ function getModularInstance(service) {
     return service;
   }
 }
-},{"process":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js"}],"node_modules/@firebase/component/dist/esm/index.esm2017.js":[function(require,module,exports) {
+},{"process":"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js"}],"node_modules/@firebase/component/dist/esm/index.esm2017.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5494,7 +5494,7 @@ var init = function init() {
   _tabsView.default.tabsMarkup();
 };
 init();
-},{"./model.js":"js/model.js","./views/eventView.js":"js/views/eventView.js","./views/searchView.js":"js/views/searchView.js","./views/resultsView.js":"js/views/resultsView.js","./views/paginationView.js":"js/views/paginationView.js","./views/View.js":"js/views/View.js","./views/popularView.js":"js/views/popularView.js","./views/shareView.js":"js/views/shareView.js","./views/tabsView.js":"js/views/tabsView.js","./views/locationEventsView.js":"js/views/locationEventsView.js","./views/bookmarksView":"js/views/bookmarksView.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./model.js":"js/model.js","./views/eventView.js":"js/views/eventView.js","./views/searchView.js":"js/views/searchView.js","./views/resultsView.js":"js/views/resultsView.js","./views/paginationView.js":"js/views/paginationView.js","./views/View.js":"js/views/View.js","./views/popularView.js":"js/views/popularView.js","./views/shareView.js":"js/views/shareView.js","./views/tabsView.js":"js/views/tabsView.js","./views/locationEventsView.js":"js/views/locationEventsView.js","./views/bookmarksView":"js/views/bookmarksView.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -5519,7 +5519,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60889" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60944" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
@@ -5663,5 +5663,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/controller.js"], null)
+},{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/controller.js"], null)
 //# sourceMappingURL=/controller.f22f2928.js.map
